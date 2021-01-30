@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  
+  body {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+.count {
+  font-size: 8em;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-style: italic;
+  color: #ccc;
+  font-size: 18px;
+}
+
+input {
+  border: 0;
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+  width: auto;
+  outline: 0;
+  display: inline-block;
+  text-indent: 15px;
+}
+.btn-group .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+}
+
+.btn-group .button:hover {
+  background-color: #3e8e41;
+}
+
+</style>
+</head>
+<body>
+
+<h1>لوحة التحكم بآلة الحقن</h1>
+
+<label for="input">count to value:</label>
+<input name="input" type="number" value="300">
+
+
+<div class="btn-group">
+  <button class="button">تشغيل مستمر</button>
+
+  <button class="button">تشغيل مرة واحدة</button>
+  <button class="button">ايقاف التشغيل</button>
+</div>
+
+</body>
+</html>
